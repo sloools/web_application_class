@@ -1,0 +1,61 @@
+body{
+  background-image: url(https://selab.hanyang.ac.kr/courses/cse326/2019/labs/images/3/blueTextureBG.jpg);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.inside_body{
+  border: solid white 10px;
+  background-color: white;
+}
+
+header{
+  text-align: right;
+  background-color: #1D2475;
+  color: white;
+}
+
+header h2{ /*태그 이름 사이에 공백 넣으면 부모-자식 관계*/
+}
+
+.cars, .sports, .music{
+  border: solid #1D2475 4px;
+  border-radius: 15px;
+  background-color: #99CCFF;
+  padding: 5px;
+  margin-top: 10px;
+  overflow: hidden; /*img를 float 하더라도 이렇게 해주면 이 안에서 img가 벗어나지 않는다*/
+}
+h2.cars, h2.sports, h2.music, h1.links{ /*질문 : .cars h2 했을때 cars 클래스 안의 h2 태그에 적용되야되는거 아님?*/
+  font-size: 14pt;
+  color: #CCCCCC;
+}
+.small_title{
+  border-bottom: blue dashed 2px;
+}
+
+
+
+section{
+  float: left;
+  width: 150px;
+  background-color: #3366CC;
+  border: solid #1D2475 4px;
+  border-radius: 15px;
+  width: : 150px;
+}
+
+aside{
+  margin-left: 160px;
+}
+/* .cars, .sports, .music h2{
+  text-align: justify;
+} */
+
+img{
+  float: right;
+}
+
+body, body *:hover{ /*맞는건지.. ??*/
+  background-color: #A6CE39
+}

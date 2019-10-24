@@ -1,0 +1,144 @@
+body{
+  background-image: url(./background.png);
+  margin: 0%;
+  padding: 0%;
+  font-family: Verdana, Tahoma, sans-serif ;
+  /*font-family는 여러개 쓴다. 하나 지원하지 않으면 다음꺼 사용한다. 폰트패밀리가 두단어 이상이면 쌍따옴표 사용한다. 원하는 폰트패밀리 순으로 마지막에는 포괄적인 폰트로 쓴다*/
+  position : relative;
+}
+
+/* #banner img{
+  height: 100px;
+} */
+
+#top_banner{
+  text-align: center;
+  background-image: url(bannerbg.png);
+  background-repeat: repeat-x;
+  height: 50px;
+}
+
+h1{
+  text-align: center;
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif ;
+  text-shadow: 3px 3px #999999;
+}
+
+.content{
+  margin : auto;
+  width: 800px;
+  border: 4px grey solid;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.reviews{
+  float: left;
+  width: 550px;
+}
+
+
+.reviews_left, .reviews_right{
+  width: 47%;
+  float: left;
+  margin-left: 2%;
+  font-size: 8pt;
+}
+
+
+
+
+#content_left{
+  float: left;
+  width: 550px;
+  background-image: url(rbg.png);
+  height: 83px;
+}
+
+#content_left > span{
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+  vertical-align: top;
+}
+
+.quote{
+  font-weight: bold;
+  background-color: #E8DC9B;
+  border: gray solid 2px;
+  border-radius: 10px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.quote img{
+  float: left;
+  margin-right: 5px;
+}
+
+.critic{
+  margin-bottom: 20pt;
+  text-align: left;
+  overflow: hidden; /*이거 해줘야지 그림이랑 텍스트랑 묶여서 크기 조정 가능*/
+}
+
+.critic  span{
+  font-style: italic;
+}
+
+.critic  img{
+  float: left;
+  padding-right: 5px;
+}
+
+#content_right{
+  background-color: #A2B964;
+  float: right;
+  width: 250px;
+}
+
+#content_right > dl{
+  margin: 10pt;
+  font-size: 8pt;
+  font-family : Arial, sans-serif
+}
+
+#content_right ul{ /* > 는 자손선택자, space 는 후손선택자*/
+
+  list-style: none;
+  padding-left: 0px;
+}
+
+dt:nth-child(2n+3){
+  margin-top: 10pt;
+}
+
+#content_right dt{
+  font-weight: bold;
+}
+
+footer{
+  text-align: center;
+  clear: both;
+  background-color: #A2B964;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+footer > p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+#validator{
+  position:absolute; /*body를 relative 로 잡고 이렇게 하면 오른쪽 아래 붙음*/
+  opacity: 0.50;
+  right: 0px;
+  bottom: 0;
+}

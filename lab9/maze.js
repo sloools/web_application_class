@@ -3,23 +3,14 @@
 var loser = null;  // whether the user has hit a wall
 var gameStart = false;
 window.onload = function() {
-    // var boundary = $$('.boundary');
-    // boundary.observe("mouseover", overBoundary);
-
-    // $$('.boundary').each(function(this) {
-    //     this.observe("mouseover", overBoundary);
-    // });
-
     $$("#maze .boundary").invoke('observe', "mouseover", overBoundary);
     $("end").observe("mouseover", overEnd);
     $("start").observe("mouseover", function() {
         gameStart = true;
     });
-    // $("maze").observe("mouseleave", overBody);
     $("maze").onmouseleave = overBody;
     $("start").observe("click", startClick);
 
-    // div#maze div.boundary 도 가능
 };
 
 // called when mouse enters the walls;
@@ -37,10 +28,6 @@ function overBoundary(event) {
             loser = false;
         }());
     }
-
-
-      //  this.addClassName("youlose");
-
 }
 
 // called when mouse is clicked on Start div;

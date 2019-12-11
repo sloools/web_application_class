@@ -1,3 +1,5 @@
+"use strict";
+
 window.onload = function() {
     $("b_xml").onclick=function(){
     	    //construct a Prototype Ajax.request object
@@ -9,7 +11,7 @@ window.onload = function() {
               onFailure : ajaxFailed,
               onException : ajaxFailed
           });
-    }
+    };
     $("b_json").onclick=function(){
           new Ajax.Request("books_json.php",{
               method: "get",
@@ -18,7 +20,7 @@ window.onload = function() {
               onFailure : ajaxFailed,
               onException : ajaxFailed
           });
-    }
+    };
 };
 
 function getCheckedRadio(radio_button){
